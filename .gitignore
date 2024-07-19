@@ -3,3 +3,7 @@ dist
 yarn-error.log
 
 .prettierrc
+.vercel
+
+# Local Netlify folder
+.netlify
