@@ -13,13 +13,31 @@
   width: 376px;
   height: 666px;
   z-index: 100;
-
   background: white;
   border-radius: 3px;
-  box-shadow: 0 0 5px 0 rgba(0, 0, 0, .9);
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.9);
+  overflow: hidden;
+  position: relative;
+  box-sizing: padding-box;
+  -moz-box-sizing: padding-box;
+  -webkit-box-sizing: padding-box;
+  padding-top: 80px;
+  padding-bottom: 20px;
+}
+
+.container-view ::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.container-view {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 #app .container-view {
-  padding: 20px;
+  padding: 0px 20px;
+  overflow: scroll;
+  height: 100%;
+  padding-bottom: 12px;
 }
-
